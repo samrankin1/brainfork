@@ -6,6 +6,7 @@ body {
   background-color: #4171be; }
 
 char {
+  font-family: monospace;
   padding-right: 10px;
   font-size: 1.4em;
   font-weight: 900; }
@@ -31,19 +32,21 @@ h1 {
   flex-direction: row;
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px; }
 
-.head-items a {
+.header a {
   margin: 5px;
-  text-decoration: none;
-  letter-spacing: 2px; }
-  .head-items a:hover {
-    color: #252525; }
-  .head-items a:visited,
-  .head-items a :active {
+  text-decoration: none; }
+  .header a:hover {
+    color: #474747; }
+  .header a:visited,
+  .header a :active {
     color: inherit;
     cursor: pointer; }
 
+.head-items a {
+  letter-spacing: 2px; }
+
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto; }
 
 .half {
@@ -57,10 +60,19 @@ h1 {
 
 .textbox {
   width: 100%;
-  padding: 5px;
-  font-size: 1.2em; }
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: monospace;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: #000;
+  color: #00FF2A;
+  box-sizing: border-box; }
 
 .table {
+  width: 100%;
+  margin-top: -4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
