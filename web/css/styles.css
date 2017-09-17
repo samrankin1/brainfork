@@ -1,26 +1,30 @@
 body {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
   font-size: 16px;
   min-height: 100vh;
   margin: 0;
-  background-color: #4171be; }
+  background-color: #69A4FD; }
+
+section {
+  position: relative;
+  text-align: center; }
 
 char {
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
   padding-right: 10px;
   font-size: 1.4em;
   font-weight: 900; }
 
 h1 {
   font-size: 2em;
-  margin: 70px 0 60px;
+  margin: 50px;
   letter-spacing: 5px;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.2) 0 2px 2px; }
 
 .splash {
-  text-align: center;
-  height: 100vh;
+  min-height: 98vh;
   max-width: 1000px;
   width: 96%;
   margin: auto; }
@@ -29,25 +33,63 @@ h1 {
   font-size: 1.5em;
   height: 10%;
   display: flex;
-  flex-direction: row;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px; }
+  flex-direction: row; }
 
-.header a {
+a {
   margin: 5px;
-  text-decoration: none; }
-  .header a:hover {
-    color: #474747; }
-  .header a:visited,
-  .header a :active {
-    color: inherit;
-    cursor: pointer; }
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px; }
+  a:visited,
+  a :active {
+    color: inherit; }
+  a:hover {
+    text-shadow: rgba(20, 20, 20, 0.4) 0 2px 2px; }
 
 .head-items a {
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  padding-left: 10px; }
 
 .container {
+  max-width: 1600px;
   width: 80%;
   margin: auto; }
+
+.boxes {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around; }
+  .boxes a {
+    padding: 20px 40px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(20, 20, 20, 0.2) 1px 1px 5px;
+    text-shadow: none; }
+    .boxes a:hover {
+      box-shadow: rgba(20, 20, 20, 0.4) 1px 1px 5px;
+      text-shadow: none; }
+
+.paragraph {
+  position: relative;
+  padding: 28px 20px 20px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  text-align: left; }
+
+.quote {
+  font-style: italic;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1em;
+  line-height: 1.4em; }
+
+.byline {
+  float: right;
+  padding-right: 10%; }
+
+.white {
+  background-color: #EAEAEA; }
 
 .half {
   width: 50%; }
@@ -58,11 +100,17 @@ h1 {
 .right {
   text-align: right; }
 
+.extra-padding-top {
+  padding-top: 60px; }
+
+.extra-padding-bottom {
+  padding-bottom: 60px; }
+
 .textbox {
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px;
   font-size: 1.2em;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
   border: none;
   outline: none;
   resize: none;
@@ -76,7 +124,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #C5C2B8; }
+  background-color: #EAEAEA; }
 
 .row {
   display: flex;

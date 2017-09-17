@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>brainfork</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Source+Code+Pro" rel="stylesheet">
     <link href="web/css/styles.css" rel="stylesheet">
     <script src="web/js/scripts.js" type="javascript/text"></script>
 </head>
@@ -28,7 +28,7 @@
         </div>
         <div class="container">
             <h1>a brainfuck compilation tool</h1>
-            <textarea class="textbox" rows="10" cols="80"></textarea>
+            <textarea class="textbox" rows="10" cols="80" placeholder="[ brainfuck goes here ]" autofocus></textarea>
             <div class="table">
                 <div class="row">
                     <p>
@@ -48,10 +48,45 @@
                 </div>
                 <div class="row">
                     <p>
-                        <char>[</char> if current byte = 0, jump past matching ]</p>
+                        <char>[</char> if current byte = 0, jump past matching <tt><b>]</b></tt></p>
                     <p>
-                        <char>]</char> if current byte != 0, jump past matching [</p>
+                        <char>]</char> if current byte != 0, jump past matching <tt><b>[</b></tt></p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="white">
+        <div class="container extra-padding-bottom">
+            <h1 class="extra-padding-top">the fork is that?</h1>
+            <div class="quote">"Brainfuck is an esoteric programming language created in 1993 by Urban Müller, and notable for its extreme minimalism.
+                The language consists of only eight simple commands and an instruction pointer."</div>
+            <div class="byline">--<a href="https://en.wikipedia.org/wiki/Brainfuck" target="_blank"> Wikipedia</a></div>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non volutpat diam. Donec vitae viverra dui. Fusce
+                accumsan aliquet tortor, non auctor odio elementum eu. Fusce pellentesque eleifend ipsum sed dictum. Quisque
+                dictum tortor in purus pharetra, a bibendum massa blandit. Maecenas volutpat ultricies consectetur. Vestibulum
+                consectetur justo a leo efficitur placerat. Pellentesque luctus ac diam in posuere.<br><br> Aliquam porttitor
+                efficitur felis in hendrerit. Maecenas sed maximus ipsum. Duis dictum enim ac risus euismod, suscipit vestibulum
+                nunc congue. Proin ac nibh sed nunc pharetra pharetra. Proin aliquam aliquet tellus in condimentum. Maecenas
+                rutrum orci ligula. Phasellus rhoncus mollis odio in vulputate. Nullam bibendum congue pulvinar. Nam eget
+                velit quam. In molestie malesuada rutrum. Fusce ac justo sit amet mi rutrum blandit. Morbi eros eros, convallis
+                et pretium non, varius pellentesque ante. Donec cursus ligula eu felis tempor placerat. Nullam posuere augue
+                et gravida tempus. Praesent vel orci a neque euismod maximus a rutrum tellus.</p>
+        </div>
+    </section>
+    <section>
+        <div class="container extra-padding-bottom">
+            <h1>available in three flavors</h1>
+            <div class="boxes">
+                <div><a href="">API</a></div>
+                <div><a href="">command line utility</a></div>
+                <div><a href="">online</a></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container extra-padding-top">
+            <div class="footer">
+                <p>&#9786; made with rust and a bunch of other shit &#9786;</p>
             </div>
         </div>
     </section>
